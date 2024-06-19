@@ -1,0 +1,27 @@
+body {
+    background-color: salmon;
+    
+}
+
+body * {
+    margin: 10px;
+}
+
+hr {
+    border-color: black;
+}
+
+.alert {
+    background-color: yellow;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    list-style-type: none;
+    width: 100%;
+    
+}
+
+ul.flashes {
+    padding-left: 0px;
+    margin-left: 0px;
+}
