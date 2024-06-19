@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <a href="/">Go back to dashboard</a>
+
+    <h2>Your messages:</h2>
+    {% for message in my_messages %}
+        <h3>From: {{ message[1] }}</h3>
+        <p>Message text: {{ message[3] }}</p>
+        <hr>
+    {% endfor %}
+{% endblock %}

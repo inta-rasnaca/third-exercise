@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <form action="/send" method="POST">
+    <p>From:</p>
+    <input required type="text" name="from" id="">
+    <p>To:</p>
+    <input required type="text" name="to" id="">
+    <p>Message:</p>
+    <input required type="text" name="message" id="">
+    <br>
+    <input type="submit" value="Send Message">
+    </form>
+    <hr>
+    <form action="/view" method="POST">
+    <p>Username: (e.g. Alan)</p>
+    <input required type="text" name="username" id="">
+    <br>
+    <input type="submit" value="View Messages Sent To Me">
+    </form>
+{% endblock %}
